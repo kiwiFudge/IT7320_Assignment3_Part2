@@ -21,21 +21,18 @@
 	}
 </script>
 </head>
-<body>
-	<div class="formTemplate">
-		<form action="Logged.jsp" method="post">
-			<h1>&emsp; Login &emsp;</h1>
-			<p class="para">Username: <br><input type="text" name="username" 
-			required="required"></p>
-			<p class="para">Password: <br><input type="password" name="password" 
-			required="required" id="pass"/>
-			<i id="fa-img" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
-			</p>
-			<div id="validate-pass"></div>
-			<input type="submit" value=" Login ">
-			<input type="reset" value=" Reset ">
-			<p>Don't have an account? <a href="Register.jsp">Register</a> here</p>
-		</form>
-	</div>
-</body>
+  <body>
+	<form action="CheckLogin" method="post">
+		<h1>&emsp; Login &emsp;</h1>
+		<p class="para">Username: <br><input type="text" name="username" 
+		required="required"></p>
+		<p class="para">Password: <br><input type="password" name="password" 
+		required="required" id="pass"/>
+		<i id="fa-img" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+		</p>
+		<div id="validate-pass"></div>
+		<input type="submit" value=" Login ">
+		<input type="reset" value=" Reset ">
+	</form>
+  </body>
 </html>

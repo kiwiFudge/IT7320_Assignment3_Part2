@@ -7,11 +7,9 @@
 <title>Welcome</title>
 </head>
 <body>		
-	<div class="formTemplate">
-		<form>
-			<h1>&emsp; Welcome! &emsp;</h1>
-			<p><a href="Login.jsp">Logout</a></p>
-		</form>
-	</div>
+	<form>
+		<h1>&emsp; Welcome! &emsp;</h1>
+		<p><a href="login.jsp">Logout</a></p>
+	</form>
 </body>
 </html>

@@ -10,17 +10,18 @@ import javax.servlet.http.HttpServletResponse;
 public class CheckLogin extends HttpServlet implements Servlet {
 	private static final long serialVersionUID = 1L;
        
+	public boolean result;
+	
     public CheckLogin() {
         super();
     }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// not used in example
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		boolean result = false;
 		String un = "admin";
 		String pw = "admin";
 		
@@ -29,6 +30,8 @@ public class CheckLogin extends HttpServlet implements Servlet {
 		
 		if(username.equals(un) && password.equals(pw)) {
 			result = true;
+		} else {
+			result = false;
 		}
 		
 		if(result == true) {

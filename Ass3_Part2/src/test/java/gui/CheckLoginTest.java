@@ -1,4 +1,4 @@
-package part2;
+package gui;
 
 import static org.junit.Assert.*;
 

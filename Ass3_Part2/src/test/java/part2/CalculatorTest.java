@@ -25,7 +25,7 @@ public class CalculatorTest {
 
 	@Test
 	public void testAdd() {
-		assertEquals(x + y -2, calc.add(x, y));
+		assertEquals(x + y, calc.add(x, y));
 	}
 
 	@Test
